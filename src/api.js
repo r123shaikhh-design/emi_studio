@@ -1,3 +1,4 @@
+const API = import.meta.env.VITE_API_URL || '';
 const csrfToken = () => {
   const c = document.cookie.split('; ').find((x) => x.startsWith('XSRF-TOKEN='));
   return c ? decodeURIComponent(c.split('=')[1]) : null;
@@ -11,8 +12,8 @@ export async function api(path, { method = 'GET', body } = {}) {
     const t = csrfToken();
     if (t) headers['X-XSRF-TOKEN'] = t;
   }
-  const res = await fetch('/api' + path, {
-    method, headers, credentials: 'same-origin', body: body ? JSON.stringify(body) : undefined
+  const res = await fetch(API + '/api' + path, {
+    method, headers, credentials: 'include', body: body ? JSON.stringify(body) : undefined
   });
   if (res.status === 204) return null;
   const data = await res.json().catch(() => null);
