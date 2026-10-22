@@ -124,8 +124,8 @@ function CalcForm({ type, sp, disclaimer }) {
             <div className="card no-print">
               <div className="lbl">Actions</div>
               <div className="row wrap" style={{ margin: '8px 0 12px' }}>
-                <a className="btn small outline" href={`/api/emi/export/pdf?${qs}`}>Download PDF summary</a>
-                <a className="btn small outline" href={`/api/emi/export/csv?${qs}`}>Download schedule (CSV)</a>
+                <a className="btn small outline" href={API +`/api/emi/export/pdf?${qs}`}>Download PDF summary</a>
+                <a className="btn small outline" href={API +`/api/emi/export/csv?${qs}`}>Download schedule (CSV)</a>
                 <button className="btn small outline" type="button" onClick={() => window.print()}>Print</button>
               </div>
               {user ? (
