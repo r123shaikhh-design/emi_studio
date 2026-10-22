@@ -1,4 +1,5 @@
-const API = import.meta.env.VITE_API_URL || '';
+
+export const API = import.meta.env.VITE_API_URL || '';
 const csrfToken = () => {
   const c = document.cookie.split('; ').find((x) => x.startsWith('XSRF-TOKEN='));
   return c ? decodeURIComponent(c.split('=')[1]) : null;
