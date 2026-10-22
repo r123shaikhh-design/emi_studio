@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { api, errorText, money } from '../api';
+import { api, API, errorText, money } from '../api';
 import { useApp } from '../AppContext.jsx';
 import DoughnutChart from '../components/DoughnutChart.jsx';
 import Guidelines from '../components/Guidelines.jsx';
