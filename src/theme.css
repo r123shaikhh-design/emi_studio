@@ -30,7 +30,7 @@ input[type=range]{width:100%;accent-color:var(--accent);margin-top:8px}
 .btn.danger{background:transparent;color:var(--err);border:1px solid var(--err)}
 .btn.light{background:#fff;color:#0f2557}.btn.ghost{background:transparent;color:#fff;border:1px solid #fff}
 .hero{background:linear-gradient(135deg,var(--brand),var(--hero2));color:#fff;border:0;margin:14px 0}
-.hero .lbl{color:#d6e0f5}.big{font-size:2.1rem;font-weight:700}
+.hero .lbl{color:#d6e0f5}.big{font-size:2.1rem;font-weight:700} 
 .lbl{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .val{font-size:1.25rem;font-weight:700;color:var(--navy)}
 .tip{background:var(--soft);border-left:4px solid var(--accent);border-radius:8px;padding:10px 12px;font-size:.9rem}
